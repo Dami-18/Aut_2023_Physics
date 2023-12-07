@@ -205,10 +205,7 @@ a{
     .title #title{
         font-size: 30px;
     }
-    .sub6{
-        grid-row: 3 / 4;
-        grid-column: 2 / 3;
-    }
+    
     #m1{
         mix-blend-mode: multiply;
         height: 137px;
