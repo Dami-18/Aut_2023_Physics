@@ -1,9 +1,17 @@
-html, body{
+html,
+body {
     margin: 0;
     background-color: rgb(206, 190, 241);
-    scroll-behavior: smooth;
+    overflow: hidden; 
+    overflow-y: scroll; 
+    scrollbar-width: none;
 }
-.title{
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.title {
     border-radius: 10px;
     position: fixed;
     width: 100vw;
@@ -15,27 +23,26 @@ html, body{
     align-items: center;
     justify-content: center;
     z-index: 10;
-    
-    
 }
 
-.title #title{
+.title #title {
     color: rgb(218, 204, 204);
     font-size: 36px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
-#m1{
+
+#m1 {
     mix-blend-mode: multiply;
     height: 200px;
     width: 430px;
     margin-top: 100px;
 }
 
-header{
+header {
     position: relative;
-
 }
-.head{
+
+.head {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 0.71fr;
@@ -43,11 +50,9 @@ header{
     align-content: center;
     align-items: center;
     justify-items: center;
-
-    
 }
 
-#content{
+#content {
     font-family: 'Comic Neue', cursive;
     color: rgb(29, 27, 29);
     font-size: 30px;
@@ -56,7 +61,7 @@ header{
     font-style: italic;
 }
 
-.subjects{
+.subjects {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1.3fr 1.3fr;
@@ -64,9 +69,9 @@ header{
     align-content: center;
     align-items: center;
     justify-items: center;
-
 }
-.s{
+
+.s {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -74,31 +79,33 @@ header{
     align-items: center;
     justify-items: center;
 }
-.s img{
+
+.s img {
     width: 18vw;
     height: 12vw;
     mix-blend-mode: multiply;
 }
-#image_card{
+
+#image_card {
     width: 18vw;
     height: 12vw;
 }
-#image_card:hover{
+
+#image_card:hover {
 
     border: 3px solid black;
     border-radius: 10px;
     box-shadow: 10px 5px 5px rgb(62, 32, 91);
     transition: 0.2s;
-    
 }
-.s p{
+
+.s p {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 20px;
     text-align-last: center;
-   
 }
 
-.footer{
+.footer {
     display: flex;
     justify-content: center;
     align-content: center;
@@ -109,250 +116,292 @@ header{
     height: 200px;
     background-color: rgb(21, 6, 36);
     margin-top: 50px;
-} 
-.footer p, #credits p{
+}
+
+.footer p,
+#credits p {
     color: rgb(213, 195, 195);
     font-family: 'Balsamiq Sans', sans-serif;
     text-align-last: center;
     font-size: 17px;
-    
 }
-.footer #contact .icons{
+
+.footer #contact .icons {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr;
     column-gap: 10px;
-} 
-.footer #contact div i{
+}
+
+.footer #contact div i {
     color: rgb(213, 195, 195);
     font-size: 40px;
 }
 
-.footer #contact div i:hover{
+.footer #contact div i:hover {
     color: rgb(187, 146, 187);
     transform: scale(1.1);
-    
 }
-a{
+
+a {
     text-decoration: none;
 }
-#CSE, #portfolio{
+
+#CSE,
+#portfolio {
     color: rgb(187, 146, 187);
     font-weight: bold;
 }
 
-#portfolio:hover{
-    color: rgb(213, 195, 195);
-    
-}
-#CSE:hover{
+#portfolio:hover {
     color: rgb(213, 195, 195);
 }
 
-@media only screen and (min-width: 1018px){
-    .title{
+#CSE:hover {
+    color: rgb(213, 195, 195);
+}
+
+@media only screen and (min-width: 1018px) {
+    .title {
         border-radius: 10px;
     }
-    .title #title{
+
+    .title #title {
         font-size: 36px;
     }
-    #m1{
+
+    #m1 {
         mix-blend-mode: multiply;
         height: 200px;
         width: 430px;
         margin-top: 100px;
     }
-    #content{
+
+    #content {
         font-size: 30px;
     }
-    .subjects{
+
+    .subjects {
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-template-rows: 1.3fr 1.3fr;
     }
-    .s img{
+
+    .s img {
         width: 18vw;
         height: 12vw;
         mix-blend-mode: multiply;
     }
-    #image_card{
+
+    #image_card {
         width: 18vw;
         height: 12vw;
     }
-    .s p{
+
+    .s p {
         font-size: 20px;
     }
-    .footer{
+
+    .footer {
         height: 200px;
         margin-top: 50px;
 
     }
-    .footer #contact .icons{
+
+    .footer #contact .icons {
         column-gap: 15px;
     }
-    .footer #contact div i{
+
+    .footer #contact div i {
         font-size: 40px;
     }
-    .footer p, #credits p{
+
+    .footer p,
+    #credits p {
         font-size: 17px;
     }
 }
 
-@media only screen and (min-width: 645px) and (max-width: 1017px){
+@media only screen and (min-width: 645px) and (max-width: 1017px) {
 
-    .title{
+    .title {
         border-radius: 10px;
     }
-    .title #title{
+
+    .title #title {
         font-size: 30px;
     }
-    #m1{
+
+    #m1 {
         mix-blend-mode: multiply;
         height: 137px;
         width: 295px;
         margin-top: 100px;
     }
-    #content{
+
+    #content {
         font-size: 25px;
     }
-    .subjects{
+
+    .subjects {
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 1.3fr 1.3fr 1.3fr;
     }
-    .s img{
+
+    .s img {
         width: 27vw;
         height: 18vw;
         mix-blend-mode: multiply;
     }
-    #image_card{
+
+    #image_card {
         width: 27vw;
         height: 18vw;
     }
-    .s p{
+
+    .s p {
         font-size: 18px;
     }
-    .footer{
+
+    .footer {
         height: 180px;
         margin-top: 45px;
 
     }
-    .footer #contact .icons{
+
+    .footer #contact .icons {
         column-gap: 13px;
     }
-    .footer #contact div i{
+
+    .footer #contact div i {
         font-size: 35px;
     }
-    .footer p, #credits p{
+
+    .footer p,
+    #credits p {
         font-size: 14px;
     }
-    
+
 }
 
-@media only screen and (min-width: 480px) and (max-width: 644px){
+@media only screen and (min-width: 480px) and (max-width: 644px) {
 
-    .title{
+    .title {
         border-radius: 8px;
     }
-    .title #title{
+
+    .title #title {
         font-size: 25px;
     }
-    #m1{
+
+    #m1 {
         mix-blend-mode: multiply;
         height: 102px;
         width: 220px;
         margin-top: 100px;
     }
-    #content{
+
+    #content {
         font-size: 21px;
     }
-    .subjects{
+
+    .subjects {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1.3fr 1.3fr 1.3fr 1.3fr;
     }
-    .s img{
+
+    .s img {
         width: 38vw;
         height: 25.33vw;
         mix-blend-mode: multiply;
     }
-    #image_card{
+
+    #image_card {
         width: 38vw;
         height: 25.33vw;
     }
-    .s p{
+
+    .s p {
         font-size: 16px;
     }
-    .footer{
+
+    .footer {
         height: 160px;
         margin-top: 40px;
 
     }
-    .footer #contact .icons{
+
+    .footer #contact .icons {
         column-gap: 11px;
     }
-    .footer #contact div i{
+
+    .footer #contact div i {
         font-size: 30px;
     }
-    .footer p, #credits p{
+
+    .footer p,
+    #credits p {
         font-size: 11px;
     }
 
 }
 
-@media only screen and (min-width: 300px) and (max-width: 479px){
+@media only screen and (min-width: 300px) and (max-width: 479px) {
 
-    .title{
+    .title {
         border-radius: 6px;
     }
-    .title #title{
+
+    .title #title {
         font-size: 20px;
     }
-    #m1{
+
+    #m1 {
         mix-blend-mode: multiply;
         height: 79px;
         width: 169px;
         margin-top: 100px;
     }
-    #content{
+
+    #content {
         font-size: 18px;
     }
-    .subjects{
+
+    .subjects {
         grid-template-columns: 1fr;
         grid-template-rows: repeat(7, 1.3fr);
     }
-    .s img{
+
+    .s img {
         width: 78vw;
         height: 52vw;
         mix-blend-mode: multiply;
     }
-    #image_card{
+
+    #image_card {
         width: 78vw;
         height: 52vw;
     }
-    .s p{
+
+    .s p {
         font-size: 14px;
     }
-    .footer{
+
+    .footer {
         height: 130px;
         margin-top: 33px;
 
     }
-    .footer #contact .icons{
+
+    .footer #contact .icons {
         column-gap: 10px;
     }
-    .footer #contact div i{
+
+    .footer #contact div i {
         font-size: 25px;
     }
-    .footer p, #credits p{
+
+    .footer p,
+    #credits p {
         font-size: 9px;
     }
-
-
 }
-
-
-
-    
-    
-
-
-
-
